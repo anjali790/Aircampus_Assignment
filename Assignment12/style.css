@@ -1,0 +1,356 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/*=========================================================Header=========================================================*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+
+.top-header,
+.bottom-header {
+    grid-column: 1/-1;
+    background-color: black;
+    color: white;
+}
+
+.top-header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+
+.left {
+    display: grid;
+    justify-content: space-between;
+}
+
+.left .logo {
+    grid-auto-flow: column;
+    margin: 0 5px;
+}
+
+.right,
+.left,
+.center {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 10px 5px;
+    align-items: center;
+}
+
+.right .grid a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 100px;
+    height: 40px;
+}
+
+.right .grid {
+    padding: 0 8px;
+}
+
+.center select {
+    width: 40px;
+    height: 40px;
+}
+
+.center input {
+    width: 830px;
+    padding: 5px 0;
+    height: 30px;
+    border: none;
+}
+
+/* .center input:hover{
+    border: 1px solid orange;
+} */
+/* .right a:hover {
+    border: 1px solid white;
+} */
+.center i {
+    background-color: orange;
+    width: 40px;
+    height: 30px;
+    padding: 5px 0;
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+.navbar {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav-list a,
+i {
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+}
+
+.navbar a:hover {
+    border: 1px solid white;
+}
+
+
+
+
+
+
+/*================================================================Main=========================================================*/
+
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 270px auto 400px 400px 350px 350px;
+    background-color: rgb(237, 234, 234);
+    grid-gap: 20px;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    display: grid;
+    grid-column: 1/-1;
+    background-color: white;
+}
+
+.span {
+    display: grid;
+    grid-column: 1/-1;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
+
+/*==================================================Article===========================================*/
+.article {
+    background-color: white;
+    padding: 10px;
+}
+
+.article1,
+.article5 {
+    display: grid;
+    grid-column: 1/2;
+}
+
+.article-picture img {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+.article2,
+.article6 {
+    display: grid;
+    grid-column: 2/3;
+}
+
+.article3,
+.article7 {
+    display: grid;
+    grid-column: 3/4;
+}
+
+.article-image {
+    width: 330px;
+    height: 280px;
+    display: grid;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.article a {
+    text-decoration: none;
+}
+
+.article-link {
+    padding-bottom: 20px;
+}
+
+.article4,
+.article8 {
+    display: grid;
+    grid-column: 4/5;
+}
+
+
+
+/*=================================================Section=============================================*/
+.section1,
+.section2 {
+    display: grid;
+    grid-column: 1/-1;
+    background-color: white;
+    padding: 10px;
+}
+
+.section1 .picture,
+.section2 .picture {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.article-picture img {
+    width: 140px;
+    height: 135px;
+}
+
+img {
+    width: 276px;
+    height: 220px;
+}

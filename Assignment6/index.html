@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/action.js">
+        <fieldset>
+            <legend id="a">Signup</legend>
+            <label for="name">Name*</label><br><br>
+            <input type="text" placeholder="First Name" name="name" id="Name" required>
+            <input type="text" placeholder="Last Name" name="name" id="Name" required><br><br>
+            <label for="ice cream">Choose your favourite ice-cream flavour</label>
+            <input type="text" name="srch" id="srch" list="datalist" />
+            <datalist id="datalist">
+                <option value="Chocolate"></option>
+                <option value="Vanila"></option>
+                <option value="Butterscotch"></option>
+                <option value="Straberry"></option>
+            </datalist><br><br>
+            <label for="Game">Choose your favourite game</label><br>
+            <label for="id">
+                <input type="radio" value="Cricket" name="Choose your favourite game" id="id">Cricket</input>
+            </label><br>
+            <label for="id1">
+                <input type="radio" value="Football" name="Choose your favourite game" id="id1">Football</input>
+            </label>
+            <label for="id2"><br>
+               <input type="radio" value="Basketball" name="Choose your favourite game" id="id2">Basketball</input>
+            </label><br><br>
+            <label for="Favourite language">Choose your favourite web language</label><br><br>
+            <label for="id3">
+            <input type="checkbox" name="Favourite language" value="HTML" id="id3">HTML
+            </label><br>
+            <label for="id4">
+            <input type="checkbox" name="Favourite language" value="CSS" id="id4">CSS
+            </label><br>
+            <label for="id5">
+            <input type="checkbox" name="Favourite language" value="Javascript" id="id5">Javascript
+            </label><br><br>
+            </fieldset>
+        </form>
+</body>
+</html>

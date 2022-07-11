@@ -1,0 +1,133 @@
+* {
+    text-transform: capitalize;
+}
+
+/*header*/
+header{
+    position: sticky;
+    top: 0;
+    background-color:rgb(2, 100, 69) ;
+}
+
+.header_flex {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(2, 100, 69);
+}
+
+.p1,.h2 {
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+}
+
+nav,
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/*main*/
+.section1 {
+    background-color: rgb(2, 100, 69);
+    text-align: center;
+    padding: 50px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: white;
+    font-size: 50px;
+}
+
+
+.section2 {
+    display: flex;
+}
+
+.para4 {
+    color: white;
+}
+
+.para1,
+.para2,
+.para3 {
+    width: 350px;
+    color: black;
+    text-align: justify;
+}
+
+h3 {
+    width: 350px;
+    color: rgb(2, 100, 69);
+}
+.div4{
+text-align: center;
+width: 20%;
+}
+
+.div1,
+.div2,
+.div3 {
+    padding: 5px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.section3 {
+    background-color: rgb(2, 100, 69);
+}
+.lorem{
+    color: white;
+    font-size: 18px;
+}
+.name{
+    color: white;
+}
+
+h4 {
+    color: white;
+    font-size: 20px;
+    font-size: 25px;
+}
+
+.h4,
+.para4 {
+    text-align: center;
+    margin: 0;
+}
+
+.h5,
+.para5 {
+    color: rgb(2, 100, 69);
+    text-align: center;
+    margin: 0;
+}
+.anjali{
+    width: 20%;
+}
+.lorem,.name{
+    margin: 0;
+}
+
+.h5 {
+    font-size: 25px;
+}
+
+/*footer*/
+.copyright {
+    color: black;
+}
+
+.icon {
+    background-color: rgb(2, 100, 69);
+    ;
+}

@@ -1,0 +1,117 @@
+* {
+    text-transform: capitalize;
+}
+
+/*header*/
+header {
+    background-color: rgb(2, 71, 71);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.gallery {
+    font-size: 40px;
+    margin-left: 70px;
+    font-weight: bolder;
+}
+
+/*main*/
+aside {
+    background-color: rgb(138, 199, 138);
+    padding: 20px;
+    height: 500px;
+    width: 250px;
+}
+
+.home,
+.explore,
+.blog,
+.editorial,
+.submit,
+.apply {
+    display: flex;
+    font-weight: bold;
+}
+
+.image {
+    background-color: rgb(138, 199, 138);
+    height: 500px;
+    width: 1200px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.apply {
+    background-color: rgb(2, 71, 71);
+    color: white;
+    margin-top: 150px;
+}
+
+.nav,
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.home {
+    margin: 10px;
+}
+
+.btn1 {
+    font-weight: bold;
+    background-color: rgb(138, 199, 138);
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0px
+}
+
+.img {
+    margin-left: 80px;
+}
+
+/*footer*/
+footer {
+    background-color: rgb(2, 71, 71);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.copyright {
+    margin-left: 100px;
+    display: flex;
+    padding: 10px;
+}
+
+.aircampus {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+i {
+    padding: 10px;
+}
+
+.logo {
+    margin-right: 100px;
+    padding: 10px;
+}

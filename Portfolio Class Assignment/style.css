@@ -1,0 +1,202 @@
+* {
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*header*/
+header {
+    background-color: black;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+}
+
+.left a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.container1 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.btn1 {
+    background-color: aqua;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/*section1*/
+.cv {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.cv .right {
+    color: wheat;
+    width: 500px;
+    font-size: 20px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+h1 span {
+    color: aqua;
+}
+
+.cv p {
+    padding: 5px;
+}
+
+.btn2 {
+    color: aqua;
+    background: transparent;
+    border: 2px solid aqua;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+
+/*section2*/
+section {
+    padding: 40px 0;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+    background-image: url(http://extendthemes.com/demos/mesmerize-pro-portfolio/wp-content/uploads/sites/16/2016/06/cropped-background-2726039-6x4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro .right {
+    width: 800px;
+    padding: 10px;
+    margin-left: 200px;
+}
+
+.intro .right h1 {
+    padding: 10px 0;
+}
+
+.intro .right h3 {
+    padding: 10px 0;
+}
+
+.intro .right p {
+    color: lightseagreen;
+}
+
+
+/*section3*/
+.freelancer {
+    background-image: url(https://i.pinimg.com/736x/7e/c6/65/7ec665db77ec459569d82ef4e1df0606.jpg);
+    text-align: center;
+    height: 650px;
+}
+
+.freelancer h1 {
+    font-size: 70px;
+    color: white;
+    margin-top: 100px;
+}
+
+.freelancer h4 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.freelancer button {
+    background-color: aqua;
+    padding: 10px 20px;
+}
+.freelancer .bottom{
+   margin-top: 350px;
+   color: wheat;
+}
+.freelancer .bottom h3{
+    margin-bottom: 10px;
+}
+
+
+/*section4*/
+.section4{
+    height: 650px;
+}
+.section4 .div1 h1{
+color: black;
+}
+.section4 .div1 p{
+    color: rgb(129, 6, 6);
+}
+.section4 .div1{
+    margin: 20px 0;
+}
+.section4 .img{
+    margin-top: 100px;
+    text-align: center;
+}
+.section4 .top{
+    margin: 0 auto;
+}
+.img1{
+    width: 400px;
+    padding: 5px;
+}
+
+
+/*section5*/
+.section5{
+    height: 650px;
+    background-color: black;
+}
+.outerdiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.mobile{
+    width: 300px;
+    padding: 20px;
+}
+.para{
+    width: 300px;
+    text-align: justify;
+    color: wheat;
+    padding: 20px;
+}
+.div1{
+    text-align: center;
+    color: bisque;
+    margin: 100px 0;
+}

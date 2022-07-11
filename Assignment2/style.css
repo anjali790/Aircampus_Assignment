@@ -1,0 +1,15 @@
+#tdata{
+    text-align: center;
+}
+    tr:nth-child(even){
+        background-color: lightgrey;
+}
+table th{
+    background-color: gray;
+}
+table td{
+    text-align: center;
+}
+table{
+    margin:0 auto;
+}

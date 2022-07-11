@@ -1,0 +1,33 @@
+.left{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.center{
+    display: flex;
+}
+.right{
+    display: flex;
+}
+nav{
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+   background-color: aqua;
+}
+.image{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+}
+
+.left .logo i{
+    color: red;
+    margin-left: 2rem;
+}
+.center .submit{
+    height: 23px;
+}
+header i{
+    cursor: pointer;
+}

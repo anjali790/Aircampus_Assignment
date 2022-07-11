@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+header{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin-left: 90px;
+}
+.nav,a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+a{
+    font-weight: bold;
+}
+h1{
+    margin-top: 10px;
+    
+}
+.para{
+    width: 65%;
+    text-align: justify;
+    
+    margin-right:0x;
+}
+.div2{
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 300px;
+    padding: 10px;
+    justify-items: center;
+}
+.container1{
+    justify-content:flex-end ;
+}
+h2{
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+.section1{
+    background-color: rgb(211, 209, 209);
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+h3{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background-color: rgb(211, 209, 209);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.aircampus{
+    margin-left: 90px;
+    padding: 10px;
+    font-weight: bold;
+}
+i{
+    padding: 10px;
+}
+.telephone{
+    height: 50%;
+}
+.footer1{
+    margin-right: 90px;
+}
