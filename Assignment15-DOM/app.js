@@ -1,6 +1,6 @@
 document.querySelectorAll('div')[0].innerText = 'Anjali'
 
-document.querySelectorAll('div')[1].innerText = 'I am Anjali. I live in New Delhi';
+document.querySelectorAll('div')[1].innerText = 'My name is Anjali. I am from Uttar Pradesh. I had completed my schooling from Kendriya Vidyalaya Shillong and Gorakhpur. I have done my B.tech in EEE from KEC, Ghaziabad.';
 
 document.querySelectorAll('div')[2].style.color='red';
 
