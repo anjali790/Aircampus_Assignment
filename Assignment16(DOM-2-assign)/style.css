@@ -1,0 +1,39 @@
+.form{
+    padding: 10px;
+    /* width: 100%; */
+    background-color: rgb(5, 132, 90);
+   
+}
+table td input{
+    width: 400px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    
+}
+#btn{
+    background-color: rgb(12, 151, 105);
+    width: 100px;
+    height: 40px;
+    color: white;
+    border: none;
+}
+
+table{
+    width: 90%;
+    margin: 50px;
+}
+
+#table2 {
+    width: 90%;
+    height: 50px;
+    margin: 50px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(12, 151, 105);
+    
+}
+
+#table2 td th{
+    border: 1px solid black;
+}
