@@ -1,0 +1,20 @@
+table{
+    width: 300px;
+    border: 1px solid black;
+}
+#display{
+    width: 370px;
+    height: 30px;
+    background-color: white;
+    text-align: right;
+}
+#td{
+    width: 370px;
+}
+button{
+    width: 50px;
+    line-height: 2;
+}
+button:hover{
+    background-color: white;
+}
