@@ -36,13 +36,21 @@ function e(){
     document.calculator.result.value = 2.718281828459045*(document.calculator.result.value)
 
 }
-// function fact(){
-//     let num = calculator.result.value ;
-//     let facto=1;
-//     for(let i=num; i>0; i--){
-//         facto=facto*i;
-//     }
-//     // return facto;
-//    return calculator.result.value = facto;
+function log(){
+    document.calculator.result.value = Math.log(document.calculator.result.value)
+}
+function rad(){
+    document.calculator.result.value = document.calculator.result.value*(3.141592653589793238/180);
+}
 
-// }
+function fact(){
+    let num = calculator.result.value ;
+    let facto=1;
+    for(let i=num; i>0; i--){
+        facto=facto*i;
+    }
+   
+ return facto;
+
+}
+calculator.result.value = facto();
