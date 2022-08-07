@@ -10,7 +10,8 @@ btn.addEventListener('click',(e)=>{
     const newElm= document.createElement("tr");
     newElm.setAttribute('class','row');
     newElm.innerHTML = `
-    <td>${input.value}</td>
+    <td class="check-box"><input type="checkbox" id="check">
+    <td id="data">${input.value}</td>
     <td class="edit-btn"><button id="edit">\u{1F58A}</button></td>
     <td class="delete-btn"><button id="delete">\u{1F5D1}</button></td>
     `;
@@ -29,7 +30,7 @@ tbody.addEventListener('click',removeRow);
 
 const editRow=(e)=>{
     if(e.target.id=='edit')
-    e.taget.parentElement.parentElement.contentEditable() =true;
+    e.taget.input.value.contentEditable();
 }
  
 tbody.addEventListener('click', editRow); 
