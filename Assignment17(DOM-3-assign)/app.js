@@ -20,14 +20,14 @@ function num(value){
     document.calculator.result.value += value;
 }
 function clear(){
-    document.calculator.result.value = " ";
+    calculator.result.value = " ";
 }
 function equal(){
     document.calculator.result.value = eval(document.calculator.result.value);
 }
 function del() {
     let res = calculator.result.value;
-    calculator.result.value = res.substring(0, res.length - 1);
+    calculator.result.value = res.slice(0, res.length - 1);
 }
 function pi(){
     document.calculator.result.value = 3.141592653589793238*(document.calculator.result.value)
@@ -36,11 +36,14 @@ function e(){
     document.calculator.result.value = 2.718281828459045*(document.calculator.result.value)
 
 }
-function log(){
+function ln(){
     document.calculator.result.value = Math.log(document.calculator.result.value)
 }
 function rad(){
     document.calculator.result.value = document.calculator.result.value*(3.141592653589793238/180);
+}
+function log(){
+    calculator.result.value = Math.log10(calculator.result.value)
 }
 
 function fact(){
@@ -50,7 +53,7 @@ function fact(){
         facto=facto*i;
     }
    
- return facto;
-
+//  return facto;
+ document.calculator.result.value = facto();
 }
-calculator.result.value = facto();
+
