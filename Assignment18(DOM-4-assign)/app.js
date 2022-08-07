@@ -3,6 +3,7 @@ const btn=document.querySelector(".btn");
 const tbody=document.querySelector("tbody");
 const tbody2=document.querySelector("tbody2");
 const removebtn=document.querySelector("#delete");
+const check=document.querySelector("#check");
 
 
 btn.addEventListener('click',(e)=>{
@@ -27,10 +28,11 @@ const removeRow=(e)=>{
 tbody.addEventListener('click',removeRow);
 
 
-
-const editRow=(e)=>{
-    if(e.target.id=='edit')
-    e.taget.input.value.contentEditable();
-}
+// const editRow=(e)=>{
+//     if(e.target.id=='edit')
+//     e.taget.input.value.removeAttribute('readonly');
+//     e.taget.input.value.focus();
+//     e.taget.input.value.innerText = "Save";
+// }
  
-tbody.addEventListener('click', editRow); 
+// tbody.addEventListener('click', editRow); 
