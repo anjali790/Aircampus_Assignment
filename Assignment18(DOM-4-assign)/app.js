@@ -28,11 +28,25 @@ const removeRow=(e)=>{
 tbody.addEventListener('click',removeRow);
 
 
-// const editRow=(e)=>{
-//     if(e.target.id=='edit')
-//     e.taget.input.value.removeAttribute('readonly');
-//     e.taget.input.value.focus();
-//     e.taget.input.value.innerText = "Save";
-// }
+const editRow=(e)=>{
+    if(e.target.id=='edit')
+    e.taget.input.value.contenteditable='true';
+    // e.taget.input.value.focus();
+    e.taget.input.value.innerText = "Save";
+}
  
-// tbody.addEventListener('click', editRow); 
+tbody.addEventListener('click', editRow);
+
+
+check.addEventListener('click',(e)=>{
+    e.preventDefault();
+    const compElm= document.createElement("tr");
+    compElm.setAttribute('class','row');
+    compElm.innerHTML = `
+    // <td class="check-box"><input type="checkbox" id="check">
+    <td id="data">${tbody.value}</td>
+    // <td class="edit-btn"><button id="edit">\u{1F58A}</button></td>
+    // <td class="delete-btn"><button id="delete">\u{1F5D1}</button></td>
+    `;
+    tbody2.appendChild(compElm);
+});
