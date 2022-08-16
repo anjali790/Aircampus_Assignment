@@ -8,8 +8,8 @@ const popUp = document.querySelector(".pop-up");
 // const redSection = document.querySelector('.redSection');
 
 
-createTask.addEventListener('click', (e) => {
-    e.preventDefault();
+createTask.addEventListener('click', (event) => {
+    event.preventDefault();
     let display = document.createElement('div');
     display.classList.add('display');
     let textArea = document.createElement('textArea');
@@ -72,7 +72,7 @@ createTask.addEventListener('click', (e) => {
     });
     
     
-    display.appendChild(textArea);
+    display.append(textArea);
     display.append(btnDiv);
     display.append(crossBtn);
     display.append(submitBtn);
@@ -84,9 +84,7 @@ createTask.addEventListener('click', (e) => {
     });
 
 
-    // crossBtn.addEventListener('click',()=>{
-    //     crossBtn.parentElement.parentElement.remove();
-    // });
+
 
 
     // submitBtn.addEventListener('click',()=>{
@@ -116,8 +114,8 @@ createTask.addEventListener('click', (e) => {
             let display2 = document.createElement('div')
             display2.classList.add('display2');
 
-            let input = document.createElement('input');
-            input.classList.add('input')
+            let textArea2 = document.createElement('textArea');
+            textArea2.classList.add('textArea2')
             
             let bottomDiv = document.createElement('div');
             bottomDiv.classList.add('bottomDiv');
@@ -130,34 +128,41 @@ createTask.addEventListener('click', (e) => {
             // editButton.classList
             check.style.display = 'none';
             check.style.color = 'green';
+            check.style.cursor = 'pointer';
             
             let trash = document.createElement('i');
             trash.setAttribute('class', 'fa-solid fa-trash-can');
             trash.style.display = 'none';
             trash.style.color = 'red';
-
+            check.style.cursor = 'pointer';
+            
             let edit = document.createElement('i');
             edit.setAttribute('class', 'fa-solid fa-pen');
             edit.style.display = 'none';
             edit.style.color = 'grey';
-
+            edit.style.cursor = 'pointer';
+            
             let square = document.createElement('i');
             square.setAttribute('class', 'fa-solid fa-square');
             square.style.display = 'none';
             square.style.color = 'red';
-            
+            square.style.cursor = 'pointer';
+
             let unlock = document.createElement('i');
             unlock.setAttribute('class', 'fa-solid fa-lock-open unlock');
-
+            unlock.style.cursor = 'pointer';
+            
             let lock = document.createElement('i');
             lock.setAttribute('class', 'fa-solid fa-lock lock');
+            lock.style.cursor = 'pointer';
+
 
 
 
             //------------------------------EVENT LISTENER FOR ICONS------------------------:-
             lock.addEventListener('click', () => {
                 lock.replaceWith(unlock);
-                input.setAttribute('readonly', 'readonly');
+                textArea2.setAttribute('readonly', 'readonly');
                 edit.style.display = 'block';
                 check.style.display = 'block';
                 square.style.display = 'block';
@@ -185,7 +190,7 @@ createTask.addEventListener('click', (e) => {
             });
 
             edit.addEventListener('click', () => {
-                input.removeAttribute('readonly');
+                textArea2.removeAttribute('readonly');
             });
             
             square.addEventListener('click', ()=>{
@@ -211,7 +216,7 @@ createTask.addEventListener('click', (e) => {
 
             //-------------------------------APPEND TO DISPLAY2-------------------:-
             popUp.append(display2);
-            display2.append(input);
+            display2.append(textArea2);
             display2.append(bottomDiv);
             bottomDiv.append(check);
             bottomDiv.append(trash);
@@ -220,8 +225,8 @@ createTask.addEventListener('click', (e) => {
             bottomDiv.append(lock);
             
             
-            input.value = textArea.value;
-            input.setAttribute('readonly', 'readonly');
+            textArea2.value = textArea.value;
+            textArea2.setAttribute('readonly', 'readonly');
 
         }
     });
