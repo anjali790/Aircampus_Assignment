@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+}
+
+.container{
+    width: 300px;
+    /* font-size: 20px; */
+}
+
+.box{
+    /* font-size: 30px; */
+    width: 10em;
+    /* width: 10rem; */
+    height: 100vh;
+    background-color: olive;
+}
