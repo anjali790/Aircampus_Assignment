@@ -3,8 +3,8 @@
     padding: 0;
 }
 
-body{
-
+html{
+    font-size: 62.5%;
 }
 
 .container{
@@ -14,8 +14,8 @@ body{
 
 .box{
     /* font-size: 30px; */
-    width: 10em;
-    /* width: 10rem; */
+    /* width: 10em; */
+    width: 20rem;
     height: 100vh;
     background-color: olive;
 }
